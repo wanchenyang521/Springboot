@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<h2>字符串拼接</h2>
+<h1 th:text="'welcome'+${message}+'!!'"></h1>
+<h1 th:text="|welcome,${message}|"></h1>
+<input th:value="${age gt 30? '中年':'年轻'}">
+
+<div th:switch="${sex}">
+    <p th:case="male">males</p>
+    <p th:case="female">females</p>
+    <p th:case="*">maleandfemales</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+2019-06-24 14:30:05.586  INFO 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : Starting Demo09logApplicationTests on WanChenyang521 with PID 9576 (started by wan11 in D:\WorkSpace\SpringBoot\demo09log)
+2019-06-24 14:30:05.586 DEBUG 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-24 14:30:05.586  INFO 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : No active profile set, falling back to default profiles: default
+2019-06-24 14:30:07.825  INFO 9576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-24 14:30:08.146  INFO 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : Started Demo09logApplicationTests in 3.153 seconds (JVM running for 4.841)
+2019-06-24 14:30:08.362 TRACE 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : trace-----------
+2019-06-24 14:30:08.362 DEBUG 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : debug-----------
+2019-06-24 14:30:08.362  INFO 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : info-------------
+2019-06-24 14:30:08.362  WARN 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : warn-------------
+2019-06-24 14:30:08.362 ERROR 9576 --- [main] c.w.demo09log.Demo09logApplicationTests  : error-------------
+2019-06-24 14:30:08.362  INFO 9576 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

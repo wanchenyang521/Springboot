@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jun 22 09:27:28 CST 2019
+backport-util-concurrent-3.1.pom>alimaven=
+backport-util-concurrent-3.1.jar>central=
+backport-util-concurrent-3.1.pom>central=

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--声明servlet-->
+    <servlet>
+        <!--声明servlet名称及对应的类-->
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.wanchenyang.web.LoginServlet</servlet-class>
+    </servlet>
+    <!--声明servlet名称及路径映射地址，
+    url-pattern找到servlet-name
+    servlet-name找到对应的servlet实现类
+    -->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

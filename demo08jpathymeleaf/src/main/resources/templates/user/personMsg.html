@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>用户列表</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+<body class="container">
+<br/>
+<h1>用户信息</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>Age</th>
+            <th>Reg Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" th:text="${user.id}">1</th>
+            <td th:text="${user.userName}">wcy</td>
+            <td th:text="${user.passWord}">00000</td>
+            <td th:text="${user.age}">6</td>
+            <td th:text="${#dates.format(user.regTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--返回-->
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/list" th:href="@{/list}" class="btn btn-info">Back</a>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

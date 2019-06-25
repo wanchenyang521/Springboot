@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${msg}"></p>
+<div th:if="${username != null}">
+    username <p th:text="${username}"></p>
+    password <p th:text="${password}"></p>
+    person <p th:text="${person}"></p>
+    personusername <p th:text="${person.getUsername()}"></p>
+    <a th:href="@{/delete(id=${person.getId()})}"  onclick="return confirm('确认是否删除此用户？')"  >delete</a></td>
+
+</div>
+
+</body>
+</html>

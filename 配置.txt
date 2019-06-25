@@ -1,0 +1,47 @@
+#配置 mybatis-config.xml 路径，mybatis-config.xml 中配置 MyBatis 基础属性
+mybatis.config-location=classpath:mybatis/mybatis-config.xml
+#配置 Mapper 对应的 XML 文件路径
+mybatis.mapper-locations=classpath:mybatis/mapper/*.xml
+#，配置项目中实体类包路径
+mybatis.type-aliases-package=com.wanchenyang.entity
+
+#数据源配置
+spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+
+#jpa配置
+spring.jpa.properties.hibernate.hbm2ddl.auto=create
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+#SQL 输出
+spring.jpa.show-sql=true
+
+#format 一下 SQL 进行输出
+spring.jpa.properties.hibernate.format_sql=true
+
+#thymeleaf
+spring.thymeleaf.cache=false
+
+日志
+自定义级别，在全局配置文件修改logging.level.com.example.demo01=warn
+logging.level.com.主配置类所在包=级别
+生成文件logging.file=springboot.log 相对于项目路径
+文件logging.file=D:/WorkSpace/SpringBoot/LogginTest/springloggin.log
+文件夹logging.path=D:/WorkSpace/SpringBoot/LogginTest/ 系统取名 spring.log
+指定日志显示格式
+	控制台
+logging.pattern.console=%d{yyyy-MM-dd} [%thread] %-5level %logger{50} - %msg%n
+%d:日期时间
+%thread：线程名
+%-5level： 显示日志级别,-5表示从左显示5个字符宽度
+%logger{50} :设置日志长度  ，例如o.s.w.s.m.m.a.
+%msg：日志消息
+%n ：回车
+	文件
+logging.pattern.file=%d{yyyy-MM-dd} ** [%thread] ** %-5level ** %logger{50}** %msg%n
+默认的日志格式，是在 jar包中 相应包的xml文件中进行配置。
+日志的具体使用规范：官方说明https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/htmlsingle/#boot-features-custom-log-configuration
+
